@@ -686,8 +686,8 @@ body{
         position: fixed;
         top: 85px;
         right:-100%;
-        background-color:var(--mobilenav);
-        backdrop-filter: blur(4px);
+        /* background-color:var(--mobilenav); */
+        backdrop-filter: blur(5px);
         height:320px;
         width:100%;
         display: block;
