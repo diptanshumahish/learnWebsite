@@ -100,6 +100,15 @@ nav ul li a.active,nav ul li a:hover{
     background: var(--whitesmoke);
    
 }
+nav .menu-btn i{
+    color:var(--whiteText);
+    font-size: 28px;
+    cursor: pointer;
+    display:none;
+    position: sticky;
+    top:0;
+    right:0;
+}
 .left,.right{
     flex:0 0 50%;
     max-width: 50%;
@@ -350,12 +359,94 @@ input[type="checkbox"]
     transition: all 700ms linear;
 
 }
+/* home ends */
 
-/* navbar ends */
 body{
 
     background-color: var(--back);
 }
 .main{
     margin: auto 30px;
+}
+/* responsivenes */
+@media(max-width:992px) {
+    nav .menu-btn i{
+        color:var(--whiteText);
+        font-size: 28px;
+        cursor: pointer;
+        display:block;
+    }
+    nav .container{
+        padding: 0;
+
+    }
+    nav ul{
+        position: fixed;
+        top: 85px;
+        left:-100%;
+        background-color: #30304173;
+        backdrop-filter: blur(2px);
+        height:320px;
+        width:100%;
+        display: block;
+        text-align: center;
+        transition:all 0.4s ease;
+
+    }
+    #click:checked ~ul{
+        left:0;
+        
+    }
+    #click:checked ~.material-icons{
+        color:var(--maincolor);
+    }
+    nav ul li{
+        margin: 20px 0;
+
+    }
+    nav ul li a {
+        display: block;
+        font-size: 20px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color:var(--maincolor)
+        
+      
+    }
+    .left h2{
+        font-size: 40px;
+       
+    }
+    .left h2 span{
+        font-size: 42px;
+
+    }
+    .left p{
+        font-size: 14px;
+
+    }
+    .card-3d-wrap{
+        width:350px;
+    }
+    
+}
+@media(max-width:768px){
+    .left,.right{
+        flex: 0 0 100%;
+        max-width: fit-content;
+    }
+    .social-media{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .right{
+        margin-top: 40px;
+        margin: 0 auto;
+    }
+   
 }
