@@ -383,7 +383,7 @@ body{
     nav ul{
         position: fixed;
         top: 85px;
-        left:-100%;
+        right:-100%;
         background-color: #30304173;
         backdrop-filter: blur(2px);
         height:320px;
@@ -394,7 +394,7 @@ body{
 
     }
     #click:checked ~ul{
-        left:0;
+        right:0;
         
     }
     #click:checked ~.material-icons{
@@ -444,9 +444,12 @@ body{
         justify-content: space-around;
         align-items: center;
     }
+    .left{
+        text-align: center;
+    }
     .right{
         margin-top: 40px;
-        margin: 0 auto;
+        margin-left:-11%;
     }
    
 }
