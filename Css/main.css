@@ -12,6 +12,8 @@
     --shadow:0px 4px 8px 0 rgba(21,21,21,.2);
     --yellow:yellow;
     --infocard:rgba(182, 193, 202, 0.26);
+    --mobilenav:rgba(56, 54, 54, 0.555);
+    transition: all 700ms ease;
 }
 .darktheme{
     --maincolor:#4f94ee;
@@ -23,7 +25,8 @@
     --whiteTextbtnHover:#303041;
     --whiteTextbtn:#e6dddd;
     --maincolor:#4f94ee;
-    --maincolorarrow:#ffffff;
+    --maincolorarrow:#fff;
+    --mobilenav:rgba(255, 255, 255, 0.363);
 }
 *{
     margin: 0;
@@ -618,6 +621,7 @@ input[type="checkbox"]
 body{
 
     background-color: var(--back);
+    transition:background-color 1s ease;
 }
 .main{
     margin: auto 30px;
@@ -682,8 +686,8 @@ body{
         position: fixed;
         top: 85px;
         right:-100%;
-        background-color: #30304173;
-        backdrop-filter: blur(2px);
+        background-color:var(--mobilenav);
+        backdrop-filter: blur(4px);
         height:320px;
         width:100%;
         display: block;
