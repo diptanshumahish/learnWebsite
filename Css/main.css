@@ -735,6 +735,9 @@ body{
         border:1px solid rgba(255, 255, 255, 0.144);
 
     }
+    .x10 ,.x9,.x3,.x5,.x2{
+        display:none;
+    }
     
 }
 @media(max-width:768px){
