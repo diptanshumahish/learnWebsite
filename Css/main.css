@@ -8,7 +8,7 @@
     --whitesmoke:whitesmoke;
     --shadow:0px 4px 8px 0 rgba(21,21,21,.2);
     --yellow:yellow;
-    --infocard:rgba(145, 167, 185, 0.377);
+    --infocard:rgba(182, 193, 202, 0.26);
 }
 *{
     margin: 0;
@@ -735,8 +735,8 @@ body{
         border:1px solid rgba(255, 255, 255, 0.144);
 
     }
-    .x10 ,.x9,.x8,.x7.x3,.x5,.x6,.x4,.x1.x2{
-        display:none;
+    #background-wrap {
+        display: none;
     }
     
 }
