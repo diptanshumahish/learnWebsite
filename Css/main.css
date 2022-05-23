@@ -64,34 +64,8 @@ header{
         height: 0vh;
     }
 }
-nav{
-    animation-name: moveright;
-    animation-duration: 3.2s;
-    animation-fill-mode: forwards;
-}
-@keyframes moveright {
-    0%{
-        width:0%;
-        opacity: 0;
-        visibility: hidden;
-    }
-    25%{
-        idth:0%;
-        opacity: 0;
-        visibility: hidden;
-    }
-    50%{
-        idth:0%;
-        opacity: 0;
-        visibility: hidden;
-    }
-    100%{
-        width:100%;
-        opacity: 1;
-        visibility: visible;
-    }
-    
-}
+
+
 .headcont{
     display:flex;
     height:100vh;
@@ -388,7 +362,29 @@ nav{
     position: fixed;
     z-index: 999;
     padding: 25px;
+    animation-name: moveright;
+    animation-duration: 3.2s;
+    animation-fill-mode: forwards;
 
+}
+@keyframes moveright {
+    0%{
+        width:0%;
+        visibility: hidden;
+    }
+    25%{
+        width:0%;
+        visibility: hidden;
+    }
+    50%{
+        idth:0%;
+        visibility: hidden;
+    }
+    100%{
+        width:100%;
+        visibility: visible;
+    }
+    
 }
 nav .container{
     padding: 0 25px;
