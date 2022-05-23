@@ -40,7 +40,6 @@ header{
     animation-name:moveup;
     animation-duration: 2.1s;
     animation-fill-mode: forwards;
-    z-index: 100;
 }
 @keyframes moveup {
     25%{
