@@ -432,6 +432,7 @@ nav .menu-btn i{
     position: sticky;
     top:0;
     right:0;
+
 }
 .left,.right{
     flex:0 0 50%;
@@ -743,7 +744,8 @@ body{
         color:var(--whiteText);
         font-size: 28px;
         cursor: pointer;
-        display:block;
+        display:flex;
+        align-items: center;
     }
     nav .container{
         padding: 0;
