@@ -34,6 +34,78 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+/* header animation */
+header{
+    position: relative;
+    animation-name:moveup;
+    animation-duration: 2.1s;
+    animation-fill-mode: forwards;
+    z-index: 100;
+}
+@keyframes moveup {
+    25%{
+        opacity: 1;
+        height: 100vh;
+    }
+    50%{
+        opacity: 1;
+        height: 100vh;
+
+
+    }
+    75%{
+        opacity: 1;
+        height: 100vh;
+
+    }
+    100%{
+        opacity: 0;
+        display: none;
+        height: 0vh;
+    }
+}
+nav{
+    animation-name: moveright;
+    animation-duration: 3.2s;
+    animation-fill-mode: forwards;
+}
+@keyframes moveright {
+    0%{
+        width:0%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    25%{
+        idth:0%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    50%{
+        idth:0%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        width:100%;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+}
+.headcont{
+    display:flex;
+    height:100vh;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: 700;
+    color:var(--whiteText);
+
+}
+.headcont p::first-letter{
+    color:var(--maincolor);
+}
 ::before,::after{
     box-sizing: border-box;
 }
