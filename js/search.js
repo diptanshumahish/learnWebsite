@@ -47,22 +47,38 @@
 
 
 
-function search(){
-    var input ,filter , ul ,li,name,inn, a ,i ,txtValue ;
-    input =document.getElementById("search-item");
-    filter =input.value.toUpperCase();
-    ul = document.getElementById("coursewindows");
-    li = ul.querySelector(".crs");
-    name=li.querySelector(".insideCardText");
-    inn=name.getElementsByTagName("h3");
-    for(i=0; i<inn.length;i++){
-        a=inn[i].getElementsByTagName("h3")[0];
-        txtValue=a.textContent || a.innerText;
-        if(txtValue.toUpperCase().indexOf(filter) > -1){
-            inn[i].style.display = "";
-        } else {
-            inn[i].style.display ="none";
-        }
-    }
+// function search(){
+//     var input ,filter , ul ,li,name,inn, a ,i ,txtValue ;
+//     input =document.getElementById("search-item");
+//     filter =input.value.toUpperCase();
+//     ul = document.getElementById("coursewindows");
+//     // li = ul.querySelector(".crs");
+//     // name=li.querySelector(".insideCardText");
+//     inn=ul.getElementsByTagName("h3");
+//     for(i=0; i<inn.length;i++){
+//         a=inn[i].getElementsByTagName("h3")[0];
+//         // txtValue=a.textContent || a.innerText;
+//         if(txtValue.toUpperCase().indexOf(filter) > -1){
+//             inn[i].style.display = "";
+//         } else {
+//             inn[i].style.display ="none";
+//         }
+//     }
     
-}
+// }
+
+
+
+
+// document.getElementById("search-item").addEventListener('submit',function(e){
+//     search(document.getElementById('search-item'));
+//     e.preventDeafult();
+
+// },false);
+// function search(){
+//     var x= document.getElementById("search-item").value;
+
+//     if(x=="dog"){
+//         window.open("/index.html");
+//     }
+// }
