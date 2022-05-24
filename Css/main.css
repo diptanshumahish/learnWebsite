@@ -13,6 +13,10 @@
     --yellow:yellow;
     --infocard:rgba(182, 193, 202, 0.26);
     --mobilenav:rgba(56, 54, 54, 0.555);
+    --headingText:#fff;
+    --courseCards:rgb(238, 236, 236);
+    --courseCardsShadow:rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+
     transition: all 700ms ease;
 }
 .darktheme{
@@ -26,6 +30,10 @@
     --whiteTextbtn:#e6dddd;
     --maincolor:#4f94ee;
     --maincolorarrow:#fff;
+    --headingText:#111;
+    --courseCards:rgb(238, 236, 236);
+    
+    --courseCardsShadow:rgba(68, 64, 64, 0.2) 0px 7px 29px 0px;
     --mobilenav:rgba(255, 255, 255, 0.363);
 }
 *{
@@ -40,6 +48,7 @@ header{
     animation-name:moveup;
     animation-duration: 2.1s;
     animation-fill-mode: forwards;
+    pointer-events: none;
 }
 @keyframes moveup {
     25%{
@@ -659,7 +668,6 @@ input[type="checkbox"]
     border: none;
     outline: none;
     border:1px solid rgba(255, 255, 255, 0.24);
-    outline: none;
     
 }
 .material-icons{

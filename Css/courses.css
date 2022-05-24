@@ -1,0 +1,96 @@
+.searchcontainer{
+    display:flex;
+    position:relative;
+    z-index: 1;
+    flex-direction: row-reverse;
+    align-items: center;
+    top: 40%;
+    margin-top: 20px;
+    justify-content: center;
+    width:100%;
+
+}
+main{
+    display:block;
+    position: relative;
+    top:100px;
+    width:100%;
+
+}
+
+.searchcontainer form{
+    width:40%;
+    border: 1px solid var(--formTextBack);
+    border-radius: 17px;
+    margin: 0 30px;
+
+}
+
+.searchcontainer form input{
+    border: none;
+    background-color: inherit;
+    padding: 10px;
+    width:100%;
+}
+#search-item{
+    padding:15px;
+    color:var(--whitesmoke);
+    letter-spacing: 1.2px;
+    z-index: index 100;
+}
+#search-item:active,
+#search-item:focus{
+    border: none;
+    outline: none;
+    z-index: 1000;
+    box-shadow:var(--courseCardsShadow);
+    border-radius: 17px;
+    color:var(--whitesmoke);
+
+}
+.courses{
+    position: relative;
+    top:30%;
+    margin: 45px;
+}
+.crstopText p{
+    font-size: 45px;
+    font-weight: 600;
+    color:var( --headingText);
+}
+.courseswindows{
+   display: flex;
+    margin-top: 60px;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:3em;
+    width:100%;
+    justify-items: center;
+}
+.crs{
+    height:20em;
+    width:30em;
+    background-color:var(--courseCards) ;
+    border-radius: 7px;
+    box-shadow:var(--courseCardsShadow);
+}
+.cardImage{
+    width:100%;
+    overflow: hidden;
+    height:75%;
+    border-radius:7px ;
+}
+.insideCardText {
+    margin:  10px 20px;
+}
+.hide{
+    display:none;
+}
+@media(max-width:768px){
+    .searchcontainer form{
+        width:60%;
+    }
+}
