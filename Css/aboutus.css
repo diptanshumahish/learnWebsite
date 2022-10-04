@@ -1,0 +1,21 @@
+body{
+    overflow: hidden;
+}
+
+.inconvenience{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inconvenience p{
+    font-size: 2.5vw;
+    transition: .3s ease-in;
+}
+
+.inconvenience p::first-letter{
+    color: rgb(197, 19, 19);
+}

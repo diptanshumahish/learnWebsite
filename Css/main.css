@@ -42,13 +42,19 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
+/* preventing selection color  */
+::selection{
+    color: none;
+    background: none;
+}
+
 /* header animation */
 header{
     position: relative;
-    animation-name:moveup;
-    animation-duration: 2.1s;
-    animation-fill-mode: forwards;
+    animation: moveup 1.9s forwards;
     pointer-events: none;
+    transition: .4s;
 }
 @keyframes moveup {
     25%{
@@ -334,6 +340,7 @@ body{
     letter-spacing: 1px;
     font-weight: normal;
     background-color: var(--whiteText);
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -370,10 +377,7 @@ nav{
     position: fixed;
     z-index: 999;
     padding: 25px;
-    animation-name: moveright;
-    animation-duration: 3.2s;
-    animation-fill-mode: forwards;
-
+    animation: moveright 2.5s forwards;
 }
 @keyframes moveright {
     0%{
@@ -411,13 +415,9 @@ nav .logo span{
 nav ul{
     display:flex;
     flex-wrap:wrap;
-
-
 }
 nav ul li{
-    
     margin: 0 25px;
-
 }
 nav ul  li a{
     color:var(--whiteText);
@@ -431,7 +431,6 @@ nav ul  li a{
 nav ul li a.active,nav ul li a:hover{
     color:var(--back);
     background: var(--whitesmoke);
-   
 }
 nav .menu-btn i{
     color:var(--whiteText);
@@ -441,13 +440,11 @@ nav .menu-btn i{
     position: sticky;
     top:0;
     right:0;
-
 }
 .left,.right{
     flex:0 0 50%;
     max-width: 50%;
     padding:25px;
-
 }
 .left .line{
     width:15%;
