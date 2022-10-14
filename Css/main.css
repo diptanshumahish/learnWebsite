@@ -56,6 +56,7 @@ header{
     pointer-events: none;
     transition: .4s;
 }
+/*loading animation for the page*/
 @keyframes moveup {
     25%{
         opacity: 1;
@@ -86,7 +87,7 @@ header{
     width:100%;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
+    font-size: 62px;
     font-weight: 700;
     color:var(--whiteText);
 
@@ -112,7 +113,7 @@ header{
 
 @-webkit-keyframes animateBubble {
     0% {
-        margin-top: 1000px;
+        margin-top: 1001px;
     }
     100% {
         margin-top: -100%;
@@ -171,7 +172,7 @@ header{
 	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
 	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
 	
-	left: -5%;
+	left: -6%;
 	top: 5%;
 	
 	-webkit-transform: scale(0.6);
@@ -379,6 +380,7 @@ nav{
     padding: 25px;
     animation: moveright 2.5s forwards;
 }
+/*animation to move right*/
 @keyframes moveright {
     0%{
         width:0%;
