@@ -1,4 +1,4 @@
-
+//button to select the button in dark mode
 var darkBtn =document.getElementById("darkbtn")
 
 
@@ -7,6 +7,7 @@ darkBtn.onclick=function(){
     document.body.classList.toggle("darktheme");
     if(localStorage.getItem("theme")=="light"){
         localStorage.setItem("theme","dark");
+        wibdow.location.reload();
     }
     else{
         localStorage.setItem("theme","light");
@@ -15,7 +16,7 @@ darkBtn.onclick=function(){
 }
 
 
-
+//callinng the local storage
 if(localStorage.getItem("theme")=="light"){
     darkBtn.classList.remove("darkbtnon");
     document.body.classList.remove("darktheme");
