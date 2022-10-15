@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root{
-    --maincolor:#4f94ee;
+    --maincolor:#275fa7;
     --maincolorarrow:#4f94ee;
-    --back:#303041;
+    --back:#51516d;
     --formTextBack:#48485e;
     --whiteText:#e6dddd;
     --whiteTextbtn:#e6dddd;
     --whiteTextbtnHover:#303041;
-    --whitesmoke:whitesmoke;
+    --whitesmoke:rgb(243, 241, 241);
     --shadow:0px 4px 8px 0 rgba(21,21,21,.2);
     --yellow:yellow;
     --infocard:rgba(182, 193, 202, 0.26);
@@ -20,7 +20,7 @@
     transition: all 700ms ease;
 }
 .darktheme{
-    --maincolor:#4f94ee;
+    --maincolor:#3668aa;
     --back:#dfe9f0;
     --whiteText:#4b4a4a;
     --whitesmoke:rgb(44, 43, 43);
@@ -87,7 +87,7 @@ header{
     width:100%;
     align-items: center;
     justify-content: center;
-    font-size: 62px;
+    font-size: 63px;
     font-weight: 700;
     color:var(--whiteText);
 
@@ -168,9 +168,9 @@ header{
 /* ANIMATIONS */
 
 .x1 {
-    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -webkit-animation: animateBubble 24s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 24s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 24s linear infinite, sideWays 2s ease-in-out infinite alternate;
 	
 	left: -6%;
 	top: 5%;
