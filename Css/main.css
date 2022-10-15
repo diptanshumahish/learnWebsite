@@ -297,6 +297,20 @@ header{
 	transform: scale(0.3);
 }
 
+.x11 {
+    -webkit-animation: animateBubble 28s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 26s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 26s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 60%;
+	top: 5%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+
 /* OBJECTS */
 
 .bubble {
